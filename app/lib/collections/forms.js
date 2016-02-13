@@ -25,27 +25,30 @@ FormSchema = new SimpleSchema({
     },
     description: {
         type: String,
-        label: "Description",
-        autoform: {
-            afFieldInput: {
-                type: "ace-editor"
-            }
-        },
-        formJson: {
-            type: String,
-            label: "Form Definition"
-        },
-        author: {
-            type: String,
-            label: "Author",
-            max: 75
-        },
-        createdAt: {
-            type: Date
-        },
-        lastModified: {
-            type: Date
-        }
-    });
+        label: "Description"
+        /*
+         autoform: {
+         afFieldInput: {
+         type: "ace-editor"
+         }
+         }
+         */
+    },
+    formJson: {
+        type: String,
+        label: "Form Definition"
+    },
+    author: {
+        type: String,
+        label: "Author",
+        max: 75
+    },
+    createdAt: {
+        type: Date
+    },
+    lastModified: {
+        type: Date
+    }
+});
 
 Forms.attachSchema(FormSchema);
