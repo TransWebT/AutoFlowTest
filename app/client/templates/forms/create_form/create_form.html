@@ -1,18 +1,12 @@
 <template name="CreateForm">
     <div class="create-form">
         <h1>Find me in app/client/templates/forms/create_form/create_form</h1>
-        {{> quickFlow autoFlowDef=flowDef id="basicForm"
-        template="autoflow_bootstrap3_horizontal" label-class="col-sm-3" input-col-class="col-sm-6" }}
+        {{> quickForm collection="Forms" id="insertFormsForm" type="insert" buttonContent="Create"}}
     </div>
 
     <div class="EditFormDef">
         <pre id="formDefEditor"></pre>
-        {{jsonEditor}}
+        {jsonEditor}
     </div>
     <button id="save" name="Save">Save</button>
-
-    <h2>Editor Content:</h2>
-    <div id="EditorContent">
-        editorContent
-    </div>
 </template>
