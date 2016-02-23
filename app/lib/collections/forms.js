@@ -26,17 +26,20 @@ FormSchema = new SimpleSchema({
     description: {
         type: String,
         label: "Description"
-        /*
-         autoform: {
-         afFieldInput: {
-         type: "ace-editor"
-         }
-         }
-         */
     },
     formJson: {
         type: String,
-        label: "Form Definition"
+        label: "Form Definition",
+        autoform: {
+            afFieldInput: {
+                type: "ace-editor",
+                editorWidth: "600px",
+                editorHeight: "250px",
+                backgroundColor: "yellow",
+                theme: "twilight",
+                mode: "json"
+            }
+        }
     },
     author: {
         type: String,
