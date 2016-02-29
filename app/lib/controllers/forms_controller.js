@@ -6,6 +6,7 @@ FormsController = RouteController.extend({
     // this.subscribe('item', this.params._id).wait();
 
     subscriptions: function () {
+        this.subscribe('forms').wait();
     },
 
     // Subscriptions or other things we want to "wait" on. This also
@@ -23,6 +24,7 @@ FormsController = RouteController.extend({
     // return Posts.findOne({_id: this.params._id});
 
     data: function () {
+        return Forms.findOne({_id: this.params._id});
     },
 
     create: function () {

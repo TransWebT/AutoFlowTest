@@ -40,7 +40,8 @@ FormSchema = new SimpleSchema({
                 mode: "json"
             }
         }
-    },
+    }
+    /* ,
     author: {
         type: String,
         label: "Author",
@@ -52,6 +53,7 @@ FormSchema = new SimpleSchema({
     lastModified: {
         type: Date
     }
+    */
 });
 
 Forms.attachSchema(FormSchema);
